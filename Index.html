@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>Shoes</title>
+</head>
+
+<body>
+    <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+    <a href="#" class="phone"><i class="fas fa-phone"></i></a>
+    <div class="logo">
+        <i class="fas fa-shoe-prints"></i>
+        <h2>Shoe Are Us</h2>
+        <p>Find The right fit for you.</p>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="slide" data-bg="cb021c">
+                <img src="shoe-1.jpg" alt="shoe-1">
+                <h1>Performence</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="slide" data-bg="E0E1E3">
+                <img src="shoe-2.jpg" alt="shoe-2">
+                <h1>Design</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="slide" data-bg="F6F7F9">
+                <img src="shoe-3.jpg" alt="shoe-3">
+                <h1>Commodity</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="slide" data-bg="3F4346">
+                <img src="shoe-4.jpg" alt="shoe-4">
+                <h1>Lightness</h1>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <button id="left" class="left-arrow arrow">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="right" class="right-arrow arrow">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="progress">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #cb021c;
+        margin: 0px;
+        transition: background0.4s ease-in-out;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+        font-size: 3rem;
+    }
+
+    .phone {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+    }
+
+    .logo {
+        color: white;
+        font-size: 1.7rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .logo i {
+        font-size: 3rem;
+    }
+
+    .logo h2 {
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .logo p {
+        color: #1f1f1f;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        height: 60vh;
+        width: 100vw;
+        margin-top: 10rem;
+    }
+
+    .carousel {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .slide {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .slide img {
+        object-fit: cover;
+        height: 400px;
+        width: 400px;
+    }
+
+    .slide h1 {
+        color: white;
+        font-size: 4rem;
+        margin-top: -2rem;
+    }
+
+    .slide a {
+        background-color: #1f1f1f;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .arrow {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        font-size: 5rem;
+        color: black;
+        opacity: 0.5;
+    }
+
+    .left-arrow {
+        left: 2rem;
+    }
+
+    .right-arrow {
+        right: 2rem;
+    }
+</style>
+
+<script>
+{
+//     const slides = document.querySelectorAll(".slide");
+// const carousel = document.getElementById("carousel");
+// const left = document.getElementById("left");
+// const right = document.getElementById("right");
+
+// const SLIDES_COUNT = slides.length;
+
+// let current_slide = 0;
+
+// left.addEventListener("click", () => {
+//     current_slide--;
+//     if (current_slide < 0) {
+//         current_slide = SLIDES_COUNT - 1;
+//     }
+
+//     updateCarouse();
+// });
+
+// right.addEventListener("click", () => {
+//     current_slide++;
+//     if (current_slide > SLIDES_COUNT - 1) {
+//         current_slide = 0;
+// }
+
+// updateCarouse();
+// });
+// function updateCarouse() {
+//     carousel.style.transform = `translateX(${
+//         -current_slide * slides[0].offsetwidht
+//     }px`;
+
+//     document.body.style.background = `#${slides[current_slide].getAttribute(
+//         "data-bg"
+//     )}`;
+// }}
+
+</script>
